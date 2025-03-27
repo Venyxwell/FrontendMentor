@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    /* Colors */
+
+    --Green: hsl(75, 94%, 57%);
+    
+    --White: hsl(0, 0%, 100%);
+    
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+    --fonte: Inter, Arial, Helvetica, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+    color: var(--White);
+}
+
+body{
+    background-color: var(--Grey-900);
+}
+
+main{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    background-color: var(--Grey-800);
+    border-radius: 10px;
+    text-align: center;
+    width: 270px;
+    padding: 5px;
+}
+
+img{
+    border-radius: 100%;
+    margin: 10px 0;
+}
+
+address{
+    font-style: italic;
+    font-weight: 600;
+    color: var(--Green);
+}
+
+p{
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+a{
+    display: block;
+    background-color: var(--Grey-700);
+    border-radius: 10px;
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    font-weight: 600;
+}
+
+a:hover{
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
